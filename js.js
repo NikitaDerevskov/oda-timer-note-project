@@ -12,7 +12,7 @@ function startTimer(timeEnd) {
 
             setTimeout(function(i) {
                 return function() {
-                    document.getElementById("endTimer").innerHTML= timeEndNumber - i;
+                    document.getElementById('endTimer').innerHTML= timeEndNumber - i;
                 };
             }(i), 60*1000*(i)); //переписать чтобы не надо было вычитать.
 
@@ -28,6 +28,4 @@ setTimeout(playMusic,timeEndNumber*1000*60)
         audio.src = 'n.mp3';
         audio.autoplay = true;
     }
-
-// hello
 }

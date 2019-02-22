@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p>Hello</p>
-<p id="endTimer">END TIMER</p>
-<p id="sec1" value= 10 >5 min</p>
-<button onclick="numberDefine('1')">GO</button>
-<p id="sec2" value= 10 >25 min</p>
-<button onclick="numberDefine('2')">SSTART</button>
-<p id="sec3" value= 10 >30 min</p>
-<button onclick="numberDefine('3')">START</button>
+<div class="container">
+    <div class="box">
+        <button class="dataSetButtons" onclick="numberDefine('1')"><p id="sec1">5 min</p></button>
+    </div>
+    <div class="box">
+        <button class="dataSetButtons" onclick="numberDefine('2')"><p id="sec2">25 min</p></button>    </div>
+    <div class="box">
+        <button class="dataSetButtons"onclick="numberDefine('3')"><p id="sec3">30 min</p></button>    </div>
+    <div class="box">
+        <button id="end"><p id="endTimer">END</p></button>
+    </div>
+    <div class="box">
+        <button class="dataSetButtons" onclick="numberDefine('4')"><p id="sec4">40 min</p></button>    </div>
+    <div class="box">
+        <button class="dataSetButtons" onclick="numberDefine('5')"><p id="sec5">60 min</p></button>    </div>
+    <div class="box">
+        <button class="dataSetButtons" onclick="numberDefine('6')"><p id="sec6">120 min</p></button>    </div>
+</div>
+
 </body>
 </html>
